@@ -5,9 +5,10 @@ $y = 22; //global variable
 function SayHello($name)
 {
     global $y;
-    echo $y . "<br>";
+    echo "C1: " . $y; //C1
+    echo "<br>C2 :" . $GLOBALS['y']; //C2
     $x = 123; //local variable
-    echo "Hello " . $name;
+    echo "<br>Hello " . $name;
 }
 SayHello("Dinomanh<br>");
 
